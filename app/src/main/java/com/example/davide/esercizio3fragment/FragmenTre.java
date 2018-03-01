@@ -14,7 +14,7 @@ import android.widget.Button;
 
 public class FragmenTre extends Fragment {
 
-    Button b;
+    Button b,b1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -26,6 +26,15 @@ public class FragmenTre extends Fragment {
                 FragmentDue fragment = new FragmentDue();
                 FragmentManager fragmentManager = getActivity().getFragmentManager();
                 fragmentManager.popBackStack();
+            }
+        });
+        b1=(Button)root.findViewById(R.id.pag1);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentDue fragment = new FragmentDue();
+                FragmentManager fragmentManager = getActivity().getFragmentManager();
+                fragmentManager.popBackStack("1",0);
             }
         });
 

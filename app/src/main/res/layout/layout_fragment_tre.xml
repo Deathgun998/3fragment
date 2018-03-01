@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     android:background="@color/green">
     <Button
+        android:id="@+id/pag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="TORNA ALL'UNO"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="454dp" />
+
+    <Button
         android:id="@+id/indietro3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

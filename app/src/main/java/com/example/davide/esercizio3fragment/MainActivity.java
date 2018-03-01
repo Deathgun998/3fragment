@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
             FragmentManager fragmentManager = getFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.add(R.id.fragmentContainer,fragment);
-            fragmentTransaction.commit();
+            fragmentTransaction.addToBackStack("1").commit();
 
         }
     }
